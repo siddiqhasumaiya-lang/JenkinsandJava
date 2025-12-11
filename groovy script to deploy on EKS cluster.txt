@@ -4,8 +4,8 @@ pipeline {
     environment {
         GIT_REPO = 'https://github.com/siddiqhasumaiya-lang/JenkinsandJava.git'
         AWS_REGION = 'ap-south-1'
-        ECR_REPO_NAME = 'jenkinsecr'
-        ECR_PUBLIC_REPO_URI = 'public.ecr.aws/k0c8q8z5/jenkinsecr'
+        ECR_REPO_NAME = 'hiba22/ecr'
+        ECR_PUBLIC_REPO_URI = 'public.ecr.aws/k0c8q8z5/hiba22/ecr'
         IMAGE_TAG = 'latest'
         AWS_ACCOUNT_ID = '894283930248'
         IMAGE_URI = "${ECR_PUBLIC_REPO_URI}:${IMAGE_TAG}"
@@ -105,4 +105,5 @@ pipeline {
         }
     }
 }
+
 
